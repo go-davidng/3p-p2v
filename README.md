@@ -1,10 +1,3 @@
----
-
-copyright:
-  years: 2021
-
----
-
 <!-- Start with a short description that explains what the offering is, why a customer would want to
 install and use it, etc. The following info is used here as an example. Be sure to update it
 accordingly. -->
@@ -12,7 +5,7 @@ accordingly. -->
 Do you want to move?  Let us doing the heavy lifting and movey our busy workloads.  Just lean back
 and kick up your legs and we will do all the work for you.
 
-***Let's go!****
+***Let's go!***
 
 ## Before you begin
 
