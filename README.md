@@ -63,15 +63,15 @@ upgrade to a new version, complete the following steps:
 Number of parallel migration will play a role of which VSI you will want to deploy with. The chart
 below helps provide guidance on the VSI profile needed for the RMM server.
 
-| Migration Size | No. of parallel migration | VSI Profile |
-| --- | --- | --- |
+| Migration Size | No. of <br>Parallel Migration | VSI Profile |
+| --- | :---: | :---: |
 | Small | <25 | c2x4 |
 | Medium | 26-50 | c4x8 |
 | Large | 51-100 | c8x32 |
 
 ## Required values
 | Parameters | Value | Definition |
-| --- | --- | --- |
+| --- | :---: | --- |
 | region | null | The MZR where the VSI is being installed. |
 | VPC | null | The VPC where the VSI is being installed. |
 | ssh key | null | SSH Key to access the VSI. |
