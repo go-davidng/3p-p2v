@@ -29,6 +29,9 @@ To run the software, the following resources are required:
 
   * IBM VPC Account 
 
+## Costs
+Do you really think this is free?  Of course, it will be free as a trial offering.
+
 ## Installing the software
 
 <!-- Recommendation is to not include the large table of configuration parameters that are listed on
@@ -55,6 +58,39 @@ upgrade to a new version, complete the following steps:
 3. Click **Settings**. In the Summary section, your version number is displayed. 
 4. Click **Update**.
 5. Select a version, and click **Update**.
+
+## Migration Sizes
+Number of parallel migration will play a role of which VSI you will want to deploy with. The chart
+below helps provide guidance on the VSI profile needed for the RMM server.
+
+| Migration Size | No. of parallel migration | VSI Profile |
+| --- | --- | --- |
+| Small | <25 | c2x4 |
+| Medium | 26-50 | c4x8 |
+| Large | 51-100 | c8x32 |
+
+## Required values
+| Parameters | Value | Definition |
+| --- | --- | --- |
+| region | null | The MZR where the VSI is being installed. |
+| VPC | null | The VPC where the VSI is being installed. |
+| ssh key | null | SSH Key to access the VSI. |
+| Public or Private | null | Migrate over public or private connection |
+| Profile |  c2x4 | Migration size, c2x4 small, c4x8 medium, c8x32 large |
+| Network | null | The subnet the VSI is being added. |
+| Security group | null | The security group added to the VSI. |
+
+## Outputs
+
+After the resource is successfully instantiated in your IBM Cloud VPC. You will get the following
+output.
+
+| Variable Name | Description |
+| --- | --- |
+| resource_name | Name of the RMM VSI server. |
+| IP | IP address of the RMM VSI server. |
+| rmm_login | login name |
+| rmm_password | password |
 
 ## Uninstalling the software
 
